@@ -1,0 +1,29 @@
+#canvas {
+    width: 600px;
+    height: 600px;
+    background-color: rgb(7, 41, 154);
+}
+#triangle-bottomleft {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid yellow;
+    border-right: 100px solid transparent;
+}
+
+#circle {
+    width: 100px;
+    height: 100px;
+    background: darkviolet;
+    border-radius: 50%
+}
+#rectangle {
+    width: 200px;
+    height: 100px;
+    background: green;
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
