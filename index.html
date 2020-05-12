@@ -1,36 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shape Up</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <form action="">
-        <input type="number" name="width" placeholder="width">
-        <input type="number" name="heightRec" placeholder="height">
+    <div id="makeRec">
+        <input type="number" name="width" class="width" placeholder="width px">
+        <input type="text" name="heightRec" class="height" placeholder="height px">
         <button type="submit" id="rectangleBtn">Create Rectangle</button>
-        <input type="number" name="sideLength" placeholder="side-length">
+
+    </div>
+    <div id="makeSqr">
+        <input type="text" name="sideLength" class="sideLength" placeholder="side length px">
         <button type="submit" id="squareBtn">Create Square</button>
-        <input type="number" name="radius" placeholder="radius">
+    </div>
+    <div id="makeCir">
+        <input type="text" name="radius" class="radius" placeholder="radius px">
         <button type="submit" id="circleBtn">Create Circle</button>
-        <input type="number" name="heightTri" placeholder="height">
-        <button type="submit" id="triangleBtn">Create Triangle</button>    
-    </form>
-    <div id="canvas"></div>
-    <div id="sidepanel">
-        
+    </div>
+    <div id="makeTri">
+        <input type="text" name="heightTri" class="heightTri" placeholder="height px">
+        <button type="submit" id="triangleBtn">Create Triangle</button>
+    </div>
+    <div class="stuffcontainer">
+        <div id="canvas">
+            <div id="rectangle"></div>
+            <div id="triangle-bottomleft"></div>
+        </div>
 
-
+        <div id="sidepanel">
+            <div id="sdpnShapeName">
+                <label for="shapeName">Shape Name</label>
+                <input class="form-control" type="readonly" name="shapeName">
+            </div>
+            <div id="sdpnWidth">
+                <label for="width">Width</label>
+                <input class="form-control" type="readonly" name="width">
+            </div>
+            <div id="sdpnHeight">
+                <label for="heigth">Height</label>
+                <input class="form-control" type="readonly" name="height">
+            </div>
+            <div id="sdpnRadius">
+                <label for="radius">Radius</label>
+                <input class="form-control" type="readonly" name="radius">
+            </div>
+            <div id="sdpnArea">
+                <label for="area">Area</label>
+                <input class="form-control" type="readonly" name="area">
+            </div>
+            <div id="sdpnPerimeter">
+                <label for="perimeter">Perimeter</label>
+                <input class="form-control" type="readonly" name="perimeter">
+            </div>
+        </div>
     </div>
 
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
-<script src="app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="app.js"></script>
 </body>
+
 </html>

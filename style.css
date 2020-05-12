@@ -1,29 +1,52 @@
+.stuffcontainer {
+    display: flex;
+    justify-content: space-around;
+}
 #canvas {
     width: 600px;
     height: 600px;
     background-color: rgb(7, 41, 154);
+    position: relative;
+    
+}
+#sidepanel{
+    background-color: deepskyblue;
+    height: 600px;
+    width: 250px;
 }
 #triangle-bottomleft {
     width: 0;
     height: 0;
     border-bottom: 100px solid yellow;
     border-right: 100px solid transparent;
+    position: absolute;
+    top: 200px;
+    left: 100px;
 }
 
 #circle {
     width: 100px;
     height: 100px;
     background: darkviolet;
-    border-radius: 50%
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 200px
 }
 #rectangle {
     width: 200px;
     height: 100px;
     background: green;
+    position: absolute;
+    top: 400px;
+    left: 350px;
 }
 
 #square {
     width: 100px;
     height: 100px;
     background: red;
+    position: absolute;
+    top: 50px;
+    left: 400px;
 }
